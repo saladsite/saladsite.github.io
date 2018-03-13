@@ -1,0 +1,23 @@
+
+
+
+body
+{
+background-color:##000000;
+background-repeat:no-repeat;
+letter-spacing:normal;
+font-family: 'Lucida Console', Monaco, monospace;
+font-size: 14 pt;
+text-align: center;
+}
+
+
+a
+{
+line-height:20px;
+text-align: center;
+text-decoration: none;
+color:#ffffff;
+letter-spacing:normal;
+font-family: 'Lucida Console', Monaco, monospace;
+}
