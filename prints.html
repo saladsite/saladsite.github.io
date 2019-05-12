@@ -1,18 +1,47 @@
 <head>
   <link rel="stylesheet" href="lander.css">
+  <style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #73AD21;
+}
+
+.button1:hover {
+  background-color: #73AD21;
+  color: white;
+}
+
+</style>
 </head>
 COMING SOON PRINTS FOR YOU ALL
+<br>
+<br>
 <br>
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#73AD21;color:#FFF;padding:8px 12px;border:0;font-size:1em"
+<button class="button button1">
   id="checkout-button-sku_F3RBUCixk7zy0X"
   role="link"
 >
-  Checkout
+  CHECKITOUT
 </button>
 
 <div id="error-message"></div>
