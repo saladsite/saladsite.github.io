@@ -1,6 +1,28 @@
 <head>
 <style>
-      h1 {
+div.gallery {
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+      
+h1 {
   font-family: 'Lucida Console', Monaco, monospace;
   margin: auto;
   width: 50%;
@@ -10,21 +32,18 @@
   text-align: center
       }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 </style>
-      
 </head>
 <h1>Goods For Sale</h1>
 <br>
-<br>
-<figure>
-    <a href="/prints/domter.html">
-    <img src='/Printimgs/DomaineTerrainSMALL.jpg' alt='missing' />
-    <figcaption>Chip Hughes - Domaine Terrain
-        <br>Year goes here
-        <br>artist name goes here</figcaption>
-</figure>
+<body>
+
+<div class="gallery">
+  <a href="/prints/domter.html">
+  <img src="/Printimgs/DomaineTerrainSMALL.jpg">
+  </a>
+  <div class="desc">Chip Hughes - Domaine Terrain</div>
+</div>
+
+</body>
+
