@@ -1,62 +1,24 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box;}
-
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+div.fixed {
+  position: fixed;
+  top: 20px;
+  right: 20;
+  display: inline;
+  border: 2px solid #73AD21;
 }
-
-.header {
-  overflow: hidden;
-  padding: 20px 10px;
+</style>
+<style>
+div.fixed1 {
+  position: fixed;
+  top: 60px;
+  right: 20;
+  display: inline;
+  border: 2px solid #507917;
 }
-
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-.header-right {
-  float: right;
-}
-
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
-</style> 
+</style>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   
@@ -90,6 +52,13 @@ body {
 <title>
 SALAD EDITIONS</title>
 
+<div class="fixed">
+<a href="/goods.html" style="color: #73AD21">GOODS FOR SALE</a>
+</div>
+<br>
+<div class="fixed1">
+<a href="/studio.html" style="color: #507917">STUDIO</a>
+</div>
   
 </head>
   
@@ -191,13 +160,7 @@ SALAD EDITIONS</title>
 
    <embed src="core.mp3" width="0" height="0" autostart="true" loop="true"/>
 
- <div class="header">
-  <div class="header-right">
-    <a class="active" href="/goods.html">GOODS FOR SALE</a>
-    <a href="/studio.html">STUDIO</a>
-    
-  </div>
-</div>
+
     
 </body>
 
