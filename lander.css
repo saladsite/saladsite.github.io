@@ -25,9 +25,8 @@ text-align: center;
 
 h1 
 {
-  background-color: #73AD21;
-  border: 1px solid black;
-  size: xx-large
+  border: 1px solid #73AD21;
+  size: x-large
 }
 
 p {
