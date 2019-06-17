@@ -120,8 +120,8 @@ edition of 12 <br>
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: window.location.protocol + '//saladeditions.com/success',
-      cancelUrl: window.location.protocol + '//saladeditions.com/canceled',
+      successUrl: window.location.protocol + '//saladeditions.com/success.html',
+      cancelUrl: window.location.protocol + '//saladeditions.com/cancelled.html',
     })
     .then(function (result) {
       if (result.error) {
