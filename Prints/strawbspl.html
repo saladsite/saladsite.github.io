@@ -57,26 +57,34 @@ div.desc {
 </style>
 </head>
 <body>
-<h2>Domaine Terrain - Chip Hughes</h2>
+<h2>Strawberry Splash - Bruce Wilhelm</h2>
 <div class="small">
   <br>
-  2018 <br>
-16x20" <br>
-edition of 50 <br>
-silkscreen on paper <br>
+  2017 <br>
+25x20" <br>
+edition of 12 <br>
+12-layer silkscreen on paper <br>
   </div>
 <br><br>
 <div class="responsive">
   <div class="gallery">
-    <a href="/Printimgs/chipski.jpg"> <img src="/Printimgs/chipski.jpg" width="400">
+    <a href="/Printimgs/strawbspl.jpg"> <img src="/Printimgs/strawbspl.jpg" width="400">
     </a>
   </div>
 </div>
 
   <div class="responsive">
   <div class="gallery">
-    <a href="/Printimgs/domterdetail.jpg">
-      <img src="/Printimgs/domterdetail.jpg" width="400">
+    <a href="/Printimgs/strawb22.jpg">
+      <img src="/Printimgs/strawb22.jpg" width="400">
+    </a>
+  </div>
+</div>
+  
+  <div class="responsive">
+  <div class="gallery">
+    <a href="/Printimgs/strawb33.jpg">
+      <img src="/Printimgs/strawb33.jpg" width="400">
     </a>
   </div>
 </div>
@@ -88,23 +96,25 @@ silkscreen on paper <br>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
-  style="background-color:#73AD21;color:#FFF;padding:8px 12px;border:0;font-size:1em;font-family: 'Lucida Console', Monaco, monospace;"
-  id="checkout-button-sku_FEL1FtpZEsmmvr"
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-sku_FGy52udxj2TvMx"
   role="link"
 >
-  Purchase
+  Checkout
 </button>
 
 <div id="error-message"></div>
 
 <script>
   var stripe = Stripe('pk_live_KRLcp1ho6m65sD2nwjv9Fqvw00C6yJ6Klc');
-  var checkoutButton = document.getElementById('checkout-button-sku_FEL1FtpZEsmmvr');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_FGy52udxj2TvMx');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_FEL1FtpZEsmmvr', quantity: 1}],
+      items: [{sku: 'sku_FGy52udxj2TvMx', quantity: 1}],
+
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
       // a successful payment.
