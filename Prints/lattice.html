@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+padding: 10px;
+}
+h2 {
+  font-family: 'Lucida Console', Monaco, monospace;
+  margin: auto;
+  padding: 10px;
+  text-align: center
+  font-size:small
+      }
+div.gallery:hover {
+  border: 1px solid #73AD21;
+}
+div.small {
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size:small;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<h2>Strawberry Splash - Bruce Wilhelm</h2>
+<div class="small">
+  <br>
+  2017 <br>
+25x20" <br>
+edition of 12 <br>
+12-layer silkscreen on paper <br>
+  </div>
+<br><br>
+<div class="responsive">
+  <div class="gallery">
+    <a href="/Printimgs/Latticefull.jpg"> <img src="/Printimgs/Latticefull.jpg" width="400">
+    </a>
+  </div>
+</div>
+
+  <div class="responsive">
+  <div class="gallery">
+    <a href="/Printimgs/latdet.jpg">
+      <img src="/Printimgs/latdet.jpg" width="400">
+    </a>
+  </div>
+</div>
+  
+  <br>
+
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#73AD21;color:#FFF;padding:8px 12px;border:0;font-size:1em;font-family: 'Lucida Console', Monaco, monospace;"
+  id="checkout-button-sku_FHHxJ20DpUxenE"
+  role="link"
+>
+  Checkout
+</button>
+
+<div id="error-message"></div>
+
+<script>
+  var stripe = Stripe('pk_live_KRLcp1ho6m65sD2nwjv9Fqvw00C6yJ6Klc');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_FHHxJ20DpUxenE');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_FHHxJ20DpUxenE', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: window.location.protocol + '//saladeditions.com/success.html',
+      cancelUrl: window.location.protocol + '//saladeditions.com/cancelled.html',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+  
+</body>
+</html>
