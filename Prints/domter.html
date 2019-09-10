@@ -95,48 +95,8 @@ silkscreen on paper <br>
   
   <br>
 
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#73AD21;color:#FFF;padding:8px 12px;border:0;font-size:1em;font-family: 'Lucida Console', Monaco, monospace;"
-  id="checkout-button-sku_FEL1FtpZEsmmvr"
-  role="link"
->
-  Purchase
-</button>
-
-<div id="error-message"></div>
-
-<script>
-  var stripe = Stripe('pk_live_KRLcp1ho6m65sD2nwjv9Fqvw00C6yJ6Klc');
-
-  var checkoutButton = document.getElementById('checkout-button-sku_FEL1FtpZEsmmvr');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{sku: 'sku_FEL1FtpZEsmmvr', quantity: 1}],
-
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: window.location.protocol + '//saladeditions.com/success.html',
-      cancelUrl: window.location.protocol + '//saladeditions.com/cancelled.html',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-</script>
+ <div class="ecwid ecwid-SingleProduct-v2 ecwid-SingleProduct-v2-centered ecwid-Product ecwid-Product-149593157" itemscope itemtype="http://schema.org/Product" data-single-product-id="149593157"><div class="ecwid-title" itemprop="name" style="display:none;" content="Chip Hughes - Domaine Terrain"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?18053343&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+  
   </br>
 <div class="fix">
   <a href="/index.html"> <img src="/favicon.png" width="20">
