@@ -57,8 +57,8 @@ div.desc {
   
   div.fix{
     position:fixed;
-    bottom:0px;
-    right: 0px;
+    top:10px;
+    right: 10px;
 }
 </style>
 </head>
@@ -111,34 +111,15 @@ edition of 12 <br>
 
 <div id="error-message"></div>
 
-<script>
-  var stripe = Stripe('pk_live_KRLcp1ho6m65sD2nwjv9Fqvw00C6yJ6Klc');
-
-  var checkoutButton = document.getElementById('checkout-button-sku_FGy52udxj2TvMx');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{sku: 'sku_FGy52udxj2TvMx', quantity: 1}],
-
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: window.location.protocol + '//saladeditions.com/success.html',
-      cancelUrl: window.location.protocol + '//saladeditions.com/cancelled.html',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-</script>
+<h2>
+<div class="ecwid ecwid-SingleProduct-v2 ecwid-SingleProduct-v2-centered ecwid-Product ecwid-Product-150316553" itemscope itemtype="http://schema.org/Product" data-single-product-id="150316553"><div class="ecwid-title" itemprop="name" style="display:none;" content="Strawberry Splash - Bruce Wilhelm"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?18053343&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+  </h2>
+  
+ <div data-custom-icon-url="https://saladeditions.com/cartiicon.png" data-show-empty-cart="FALSE" class="ec-cart-widget"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?18053343&data_platform=code" charset="utf-8"></script>
+<script type="text/javascript">Ecwid.init();</script>
+</div>
   
   <div class="fix">
   <a href="/index.html"> <img src="/favicon.png" width="20">
