@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -8,6 +7,7 @@ div.gallery {
   margin-right: auto;
 padding: 10px;
 }
+
 h2 {
   font-family: 'Lucida Console', Monaco, monospace;
   margin: auto;
@@ -21,45 +21,59 @@ div.gallery:hover {
 div.small {
   font-family: 'Lucida Console', Monaco, monospace;
   font-size:small;
+  margin: auto;
+  padding: 10px;
 }
 div.gallery img {
   width: 100%;
   height: auto;
 }
+
 div.desc {
   padding: 15px;
   text-align: center;
 }
+
 * {
   box-sizing: border-box;
 }
+
 .responsive {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
 }
+
+.responsive2 {
+  float: left;
+  float: bottom;
+}
+  
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
   }
 }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-  
-  div.fix{
+ 
+div.fix{
     position:fixed;
-    top:10px;
     right: 10px;
+    top: 10px;
 }
+
 </style>
 </head>
 <body>
