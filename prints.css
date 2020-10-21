@@ -46,15 +46,10 @@ desc {
   display: table;
   clear: both;
 }
- 
-div.fixed {
-  position: fixed;
-  top: 0;
-  right: 0;
-}
 
-#locator {position: fixed; visibility: visible; left: 10px; bottom: 10px; z-index: 200; }
-#cart {position: fixed; visibility: visible; top: 10px; right: 10px; z-index: 200; }
+
+#locator {position: absolute; visibility: visible; left: 0; bottom: 0; z-index: 200; }
+#cart {position: absolute; visibility: visible; top: 0; right: 0; z-index: 200; }
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
