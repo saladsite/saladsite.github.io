@@ -47,10 +47,11 @@ desc {
   clear: both;
 }
  
-div.fix{
-    position:fixed;
-    right: 10px;
-    top: 10px;
+fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: auto;
 }
 
 /* Media Queries: Tablet Landscape */
