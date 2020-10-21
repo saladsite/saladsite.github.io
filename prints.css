@@ -47,11 +47,12 @@ desc {
   clear: both;
 }
  
-div.fixed {
+fixed {
   position: fixed;
   top: 0;
   right: 0;
 }
+
 fix {
 position: fixed;
   bottom: 0;
