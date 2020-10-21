@@ -6,8 +6,8 @@ padding: 10px;
 }
 h2 {
   font-family: 'Lucida Console', Monaco, monospace;
-  margin: auto;
-  padding: 25px;
+  margin-left: 80px;
+  padding: 10px;
   font-size:small
       }
 gallery:hover {
@@ -16,8 +16,8 @@ gallery:hover {
 small {
   font-family: 'Lucida Console', Monaco, monospace;
   font-size:small;
-  margin: auto;
-  padding: 25px;
+  margin-left: 80px;
+  padding: 10px;
 }
 gallery img {
   width: 100%;
