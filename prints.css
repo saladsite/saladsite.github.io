@@ -48,8 +48,8 @@ desc {
 }
 
 
-img.locator {position: absolute; visibility: visible; left: 0; bottom: 0; z-index: 200; }
-img.cart {position: absolute; visibility: visible; top: 0; right: 0; z-index: 200; }
+img.locator {position: fixed; visibility: visible; left: 0; bottom: 0; z-index: 200; }
+.cart {position: fixed; visibility: visible; top: 0; right: 0; z-index: 200; }
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
