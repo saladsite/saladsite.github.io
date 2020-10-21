@@ -48,9 +48,6 @@ desc {
 }
 
 
-#locator {position: fixed; visibility: visible; left: 0; bottom: 0; z-index: 200; }
-
-
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
     #primary { width:100%; } 
