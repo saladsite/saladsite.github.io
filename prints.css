@@ -53,7 +53,7 @@ fixed {
   right: 0;
 }
 
-imgfix {
+img.fix {
   display: block;
   bottom: 0;
   left: 0;
