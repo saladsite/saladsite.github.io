@@ -53,11 +53,7 @@ div.fixed {
   right: 0;
 }
 
-img.fix {
-  display: block;
-  bottom: 0;
-  left: 0;
-}
+#locator {position: fixed; visibility: visible; left: 10px; bottom: 10px; z-index: 200; }
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
