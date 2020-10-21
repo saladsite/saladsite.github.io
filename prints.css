@@ -47,7 +47,7 @@ desc {
   clear: both;
 }
  
-fixed {
+div.fixed {
   position: fixed;
   top: 0;
   right: 0;
