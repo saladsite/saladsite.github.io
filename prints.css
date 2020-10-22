@@ -40,7 +40,7 @@ responsive {
 }
 responsive2 {
   float: left;
-  float: bottom;
+  float: right;
 }
  
 clearfix:after {
