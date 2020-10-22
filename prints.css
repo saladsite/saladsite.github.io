@@ -10,7 +10,7 @@ h1 {
   font-weight: bold;
   margin: auto;
   padding: 20px;
-  font-size: medium
+  font-size: medium;
       }
 gallery:hover {
   border: 1px solid #73AD21;
@@ -18,7 +18,7 @@ gallery:hover {
 small {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: small;
-  text-indent: 0px;
+  text-indent: 0;
   margin: auto;
   padding: 10px;
 }
