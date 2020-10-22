@@ -5,21 +5,21 @@ gallery {
   margin-right: auto;
 padding: 10px;
 }
-.h1 {
+h1 {
   font-family: "Lucida Console", Monaco, monospace;
   font-weight: bold;
   margin: 20px;
   padding: 20px;
-      }
-gallery:hover {
-  border: 1px solid #73AD21;
 }
-.small {
+p {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: small;
   text-indent: 0;
   margin: 20px;
   padding: 10px;
+}
+gallery:hover {
+  border: 1px solid #73AD21;
 }
 gallery img {
   width: 100%;
