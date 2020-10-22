@@ -33,11 +33,6 @@ desc {
 * {
   box-sizing: border-box;
 }
-responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
 responsive2 {
   float: left;
   float: right;
