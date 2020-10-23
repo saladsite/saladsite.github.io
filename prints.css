@@ -35,6 +35,7 @@ desc {
   box-sizing: border-box;
 }
 responsive2 {
+  font-family: "Lucida Console", Monaco, monospace;
   float: left;
   float: right;
 }
