@@ -9,9 +9,9 @@ refont {
 font-size:1.4vw;
   }
 div.fixed {
+  position: fixed;
   margin: auto;
   margin-top: 8%;
-  position: fixed;
   line-height: 1;
   text-align: center;
   border-top: 2px solid #73AD21; padding: 10px;
@@ -34,15 +34,19 @@ div.fixed1 {
 @media  (max-width: 600px) {
   div.fixed {
   margin-top: 25%;
-  font-size: 14vw;                                       
+  font-size: 12vw;
+  border-top: 2px solid #73AD21; padding: 10px;
+  border-bottom: 2px solid #73AD21; 10px;
   }
  refont {
-font-size:1.4vw;
+font-size:1.2vw;
 font-weight: bold;
 line-height: .9;
+margin: auto;
   } 
 body {
 line-height: 50%;
+margin-left: 40px;
  }                                         
 }
 
@@ -50,10 +54,7 @@ line-height: 50%;
 @media only screen and (max-height: 480px) and (orientation: landscape) {
   div.fixed {
   margin-top: 2%;
-  font-size: 12.5vw;
-  margin-right: 5%;
-  border-top: 2px solid #73AD21; margin: auto; padding: 10px;
-  border-bottom: 2px solid #73AD21; margin:auto; 10px;                                       
+  font-size: 12.5vw;                                       
 }
 }
 
