@@ -31,7 +31,7 @@ div.fixed1 {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px), {
+@media  (max-device-width: 480px) {
   div.fixed {
   margin-top: 10%;
   font-size: 13.5vw;
@@ -39,8 +39,11 @@ div.fixed1 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  div.fixed {}
+@media only screen and (max-width: 480px) and (orientation: landscape)) {
+  div.fixed {
+  margin-top: 2%;
+  font-size: 13.5vw;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
