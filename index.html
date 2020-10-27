@@ -5,6 +5,60 @@
 <link rel="stylesheet" href="/prints.css"> 
 <style>
 body {margin:10;padding:10;}
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
 refont {
 font-size:1.4vw;
   }
@@ -99,9 +153,10 @@ SALAD EDITIONS</title>
  </head>
 
   <body>
+<div class="blink-image">
 <div style="width: 20px; position: fixed; bottom:15%; left:12%; z-index:300; visibility:show" >
 <a href="/index.html"> <img src="/favicon.png"></a>
-  </div>
+                                              </div></div>
 <div style="width: 20px; position: fixed; top:20%; left:40%; z-index:300; visibility:show" >
 <a href="/index.html"> <img src="/favicon.png"></a>
   </div>
