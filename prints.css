@@ -1,0 +1,58 @@
+body {margin: 10px;} 
+gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+padding: 10px;
+}
+h1 {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-weight: bold;
+  font-size: 18px;
+  text-indent: 0;
+  margin: 10px;
+  padding: 10px;
+}
+p {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: small;
+  text-indent: 0;
+  margin: 10px;
+  padding: 10px;
+}
+gallery:hover {
+  border: 1px solid #73AD21;
+}
+gallery img {
+  width: 100%;
+  height: auto;
+}
+desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+responsive2 {
+  font-family: "Lucida Console", Monaco, monospace;
+  float: left;
+  float: right;
+}
+ 
+clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:100%; } 
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+}
