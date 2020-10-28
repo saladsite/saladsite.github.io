@@ -59,8 +59,6 @@ responsive2 {
 }
 .responsive {
   padding: 0 6px;
-  float: left;
-  float: right;
   width: 100%;
 }
  
@@ -74,7 +72,6 @@ clearfix:after {
 @media  (max-width: 600px) {
   .responsive {
 padding: 0 6px;
-  float: left;
   width: 24.99999%;
   }                                       
 }
