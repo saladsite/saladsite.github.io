@@ -60,7 +60,8 @@ responsive2 {
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 24.99999%;
+  float: right;
+  width: 100%;
 }
  
 clearfix:after {
