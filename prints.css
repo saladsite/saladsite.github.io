@@ -1,5 +1,5 @@
 body {margin: 10px;} 
-gallery {
+.gallery {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -58,7 +58,7 @@ responsive2 {
   float: right;
 }
 div.responsive {
-  padding: 0 6px;
+  padding: 10px;
   width: 100%;
 }
  
@@ -71,7 +71,7 @@ clearfix:after {
 
 @media  (max-width: 600px) {
   .responsive {
-padding: 0 6px;
+padding: 10px;
   width: 24.99999%;
   }                                       
 }
