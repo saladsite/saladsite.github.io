@@ -57,6 +57,11 @@ responsive2 {
   float: left;
   float: right;
 }
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
  
 clearfix:after {
   content: "";
@@ -65,12 +70,10 @@ clearfix:after {
 }
 
 
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:100%; } 
-}
-
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
+@media  (max-width: 600px) {
+  .responsive {
+padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  }                                       
 }
