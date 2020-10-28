@@ -72,10 +72,3 @@ clearfix:after {
   clear: both;
 }
 
-
-@media  (max-width: 600px) {
-  .gallery {
-  padding: 10px;
-  float: left;
-  }
-}
