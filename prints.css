@@ -57,7 +57,7 @@ responsive2 {
   float: left;
   float: right;
 }
-.responsive {
+div.responsive {
   padding: 0 6px;
   width: 100%;
 }
