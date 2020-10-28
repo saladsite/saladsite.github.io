@@ -34,6 +34,16 @@ desc {
 * {
   box-sizing: border-box;
 }
+div.fixed {
+  position: fixed;
+  margin: auto;
+  bottom: 3%;
+  left: 3%;
+  line-height: 1;
+  font-family: 'Lucida Console', Monaco, monospace;
+  color: #73AD21;
+  opacity: .8;
+} 
 responsive2 {
   font-family: "Lucida Console", Monaco, monospace;
   float: left;
