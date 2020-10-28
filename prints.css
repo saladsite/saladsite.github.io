@@ -15,12 +15,10 @@ h1 {
 }
 h2 {
   font-family: "Lucida Console", Monaco, monospace;
-  float: left;
-  float: right;
   margin: auto;
   padding: 10px;
-  text-align: center
-  font-size:small
+  text-align: center;
+  font-size: small;
       }
 p {
   font-family: "Lucida Console", Monaco, monospace;
