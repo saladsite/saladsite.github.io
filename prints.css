@@ -48,7 +48,8 @@ gallery img {
   width: 100%;
   height: auto;
 }
-desc {
+.desc {
+  font-family: 'Lucida Console', Monaco, monospace;
   padding: 15px;
   text-align: center;
 }
