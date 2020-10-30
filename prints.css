@@ -5,6 +5,13 @@ body {margin: 10px;}
   margin-left: 0px;
   padding: 10px;
 }
+.gallery2 {
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
 h1 {
   font-family: "Lucida Console", Monaco, monospace;
   font-weight: bold;
